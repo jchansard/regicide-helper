@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/regicide-helper/static/css/main.298e83df.css",
+    "main.js": "/regicide-helper/static/js/main.fef32154.js",
+    "static/js/787.523164c5.chunk.js": "/regicide-helper/static/js/787.523164c5.chunk.js",
+    "index.html": "/regicide-helper/index.html",
+    "main.298e83df.css.map": "/regicide-helper/static/css/main.298e83df.css.map",
+    "main.fef32154.js.map": "/regicide-helper/static/js/main.fef32154.js.map",
+    "787.523164c5.chunk.js.map": "/regicide-helper/static/js/787.523164c5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.298e83df.css",
+    "static/js/main.fef32154.js"
+  ]
+}
