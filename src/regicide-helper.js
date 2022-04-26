@@ -1,5 +1,6 @@
 import React from 'react';
 import RHDropdown from './rh-dropdown.js';
+import RHTracker from './rh-grid.js';
 
 export default class RegicideHelper extends React.Component {
   state = {
@@ -9,7 +10,6 @@ export default class RegicideHelper extends React.Component {
 
   updateHealth(event) {
     this.setState({health: parseInt(event.target.value)});
-    console.dir(event);
   }
 
   updateAttack(event) {
@@ -38,6 +38,9 @@ export default class RegicideHelper extends React.Component {
            </button>
            <button onClick={() => this.setVals(30,15)}>Queen</button>
            <button onClick={() => this.setVals(40,20)}>King</button>
+         </div>
+         <div>
+           <RHTracker />
          </div>
       </div>
     )
