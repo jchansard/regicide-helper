@@ -4,15 +4,15 @@ export default class RHTracker extends React.Component {
 
   constructor() {
     super();
-    this.royalty = ["Jack","Queen","King"];
     this.suits = ["♠️","♣️","♥️","♦️"];
+    this.royalty = ["Jack","Queen","King"];
   }
 
   __getHeaderRows() {
     let labels = []
     labels.push(<th key={'blank'} />);
-    for (let i=0; i < this.royalty.length; i++) {
-      labels.push(<th key={i}>{this.royalty[i]}</th>);
+    for (let i=0; i < this.suits.length; i++) {
+      labels.push(<th key={i}>{this.suits[i]}</th>);
     }
     return (
       <tr>
@@ -22,7 +22,7 @@ export default class RHTracker extends React.Component {
 
   __getCheckboxRows() {
     let rows = [];
-    for (let i=0; i < this.suits.length; i++) {
+    for (let i=0; i < this.royalty.length; i++) {
       rows.push(this.__getCheckboxRow(i))
     }
     return rows;
@@ -30,8 +30,8 @@ export default class RHTracker extends React.Component {
 
   __getCheckboxRow(index) {
     let row = [];
-    row.push(<td>{this.suits[index]}</td>);
-    for (let i=0; i < this.royalty.length; i++) {
+    row.push(<td>{this.royalty[index]}</td>);
+    for (let i=0; i < this.suits.length; i++) {
       row.push(<td key={index + " " + i}><input type="checkbox" /></td>)
     }
     return (<tr>{row}</tr>)
